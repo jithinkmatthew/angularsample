@@ -1,0 +1,20 @@
+.container{
+    color: rgb(171, 33, 226)
+}
+
+.div-container{
+    color: rgb(15, 15, 15);
+    line-height: 1.2;
+    width:800px;
+    margin:0 auto;
+}
+
+.example-full-width{
+    width: 100%;
+    min-width: 150px;
+    max-width: 500px;
+}
+
+.example-card {
+    width: 1000px;
+}

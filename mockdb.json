@@ -1,0 +1,152 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "first_name": "Jithin",
+      "last_name": "Mathew",
+      "email": "jithin@gmail.com",
+      "password": "test123"
+    },
+    {
+      "id": "3",
+      "first_name": "Na",
+      "last_name": "Cha",
+      "email": "kjdkj@gmail.com",
+      "password": "test123"
+    },
+    {
+      "firstname": "sfdgsfgs",
+      "lastname": "sfdgsfgsfg",
+      "email": "sfdgsfg@gmail.xxx",
+      "password": "wetwrtwrtwt",
+      "id": "7py7TxS"
+    },
+    {
+      "firstname": "Jog",
+      "lastname": "gger",
+      "email": "jogger@gmail.xom",
+      "password": "test123",
+      "id": "rMR1svb"
+    },
+    {
+      "firstname": "Jog",
+      "lastname": "gger",
+      "email": "jogger@gmail.xom",
+      "password": "test123",
+      "id": "oA68ghm"
+    },
+    {
+      "firstname": "Jog",
+      "lastname": "gger",
+      "email": "jogger@gmail.xom",
+      "password": "test123",
+      "id": "77kTB8y"
+    },
+    {
+      "firstname": "sfd",
+      "lastname": "kjhkjh",
+      "email": "kjhk@gmail.com",
+      "password": "jhk",
+      "id": "4QCbFDk"
+    },
+    {
+      "firstName": "asdasd",
+      "lastName": "asasd",
+      "email": "asd@asd.com",
+      "password": "123456",
+      "id": "M6IEBz6"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": "AID_I5p"
+    },
+    {
+      "firstName": "cvkjkjk",
+      "lastName": "kjkjkj",
+      "email": "ksdjf@gmail.ss",
+      "password": "skdjfksfj",
+      "id": "00hzUId"
+    },
+    {
+      "firstName": "cvkjkjk",
+      "lastName": "kjkjkj",
+      "email": "ksdjf@gmail.ss",
+      "password": "skdjfksfj",
+      "id": "m1OEEQt"
+    },
+    {
+      "firstName": "dkjkjkj",
+      "lastName": "kjkjkjk",
+      "email": "kjkjkjkjkj@kjkjkj.ddd",
+      "password": "ddddddddddddd",
+      "id": "oPnLS45"
+    },
+    {
+      "firstName": "sdflkjljl",
+      "lastName": "lkjsldkfjlkj",
+      "email": "kdfjkdfjkj@dfkj.dk",
+      "password": "kfjjfjjj",
+      "id": "v4A6jFZ"
+    },
+    {
+      "firstName": "shfhgh",
+      "lastName": "hghg",
+      "email": "hghghg@sjhf.df",
+      "password": "testhdg",
+      "id": "xXjcLXq"
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "age": 16,
+      "name": "Andy"
+    },
+    {
+      "id": 2,
+      "age": 16,
+      "name": "Landy"
+    },
+    {
+      "id": 3,
+      "age": 44,
+      "name": "Jages"
+    },
+    {
+      "id": "4",
+      "age": "45",
+      "name": "Ganges"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "date": "03-18-2016",
+      "message": "Nice!"
+    },
+    {
+      "id": 2,
+      "date": "06-21-2017",
+      "message": "Great view!"
+    }
+  ],
+  "pictures": [
+    {
+      "id": 1,
+      "author": "Lisa",
+      "description": "A wonderful view of nature",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "A natural view"
+    },
+    {
+      "id": 2,
+      "author": "Andy",
+      "description": "Seaside sunset",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "Landscape view"
+    }
+  ]
+}
