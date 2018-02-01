@@ -18,7 +18,4 @@ export class JsonserverService {
         return this.http.post('http://localhost:3000/signup', user);
 
     }
-
-
-
 }

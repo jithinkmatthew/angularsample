@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { JsonserverService } from './services/jsonserver/jsonserver.service';
+import { JsonserverService } from './services/jsonserver.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
@@ -18,34 +18,58 @@ import { FeaturesComponent } from './components/features/features.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routers: Routes = [
-  { path: 'welcome', component: WelcomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'features', component: FeaturesComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: '**', redirectTo: '/', pathMatch: 'full' }
+    {
+        path: 'welcome',
+        component: WelcomeComponent
+    },
+    {
+        path: 'login',
+        component: LoginComponent
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: 'features',
+        component: FeaturesComponent
+    },
+    {
+        path: 'home',
+        component: HomeComponent
+    },
+    {
+        path: '',
+        redirectTo: '/',
+        pathMatch: 'full'
+    },
+    {
+        path: '**',
+        redirectTo: '/',
+        pathMatch: 'full'
+    }
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    WelcomeComponent,
-    LoginComponent,
-    SignupComponent,
-    AboutComponent,
-    FeaturesComponent,
-    HomeComponent
-  ],
-  imports: [
-    HttpModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    RouterModule.forRoot(routers)
-  ],
-  providers: [JsonserverService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        WelcomeComponent,
+        LoginComponent,
+        SignupComponent,
+        AboutComponent,
+        FeaturesComponent,
+        HomeComponent
+    ],
+    imports: [
+        HttpModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        RouterModule.forRoot(routers)
+    ],
+    providers: [JsonserverService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
