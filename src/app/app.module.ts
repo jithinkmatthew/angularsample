@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { JsonserverService } from './services/jsonserver.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-
+import { AuthGuard } from './auth.guard';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -15,28 +15,13 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AboutComponent } from './components/about/about.component';
 import { FeaturesComponent } from './components/features/features.component';
-import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AuthService } from './services/auth.service';
 
 const routers: Routes = [
     {
         path: 'welcome',
         component: WelcomeComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
-        path: 'about',
-        component: AboutComponent
-    },
-    {
-        path: 'features',
-        component: FeaturesComponent
-    },
-    {
-        path: 'home',
-        component: HomeComponent
     },
     {
         path: '',
@@ -58,7 +43,6 @@ const routers: Routes = [
         SignupComponent,
         AboutComponent,
         FeaturesComponent,
-        HomeComponent
     ],
     imports: [
         HttpModule,
@@ -67,9 +51,9 @@ const routers: Routes = [
         BrowserModule,
         BrowserAnimationsModule,
         MaterialModule,
-        RouterModule.forRoot(routers)
+        AppRoutingModule,
     ],
-    providers: [JsonserverService],
+    providers: [JsonserverService, AuthGuard, AuthService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

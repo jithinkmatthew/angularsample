@@ -4,6 +4,7 @@ import { JsonserverService } from '../../services/jsonserver.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { Router } from '@angular/router';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
     selector: 'app-signup',
@@ -39,9 +40,11 @@ export class SignupComponent implements OnInit {
         );
     }
 
+
     doSignUp() {
         console.log(this.signUpForm.value);
         this.jsonServer.createUser(this.signUpForm.value).subscribe(res => {
+
             this.router.navigate(['/home']);
             console.log(res);
 
